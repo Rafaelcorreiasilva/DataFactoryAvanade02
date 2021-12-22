@@ -1,0 +1,24 @@
+{
+	"name": "AzureMySqlTable22Azure",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mysqlaulaengenharia",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string",
+				"defaultValue": "value"
+			}
+		},
+		"annotations": [],
+		"type": "AzureMySqlTable",
+		"schema": [],
+		"typeProperties": {
+			"tableName": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
