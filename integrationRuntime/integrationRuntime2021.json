@@ -1,6 +1,0 @@
-{
-	"name": "integrationRuntime2021",
-	"properties": {
-		"type": "SelfHosted"
-	}
-}
